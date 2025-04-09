@@ -1,6 +1,6 @@
 # 💧 BeAware: Water Quality Prediction & Outlier Detection System
 
-BeAware is an AI-powered environmental awareness system designed to monitor, analyze, and predict water quality across the UK. It leverages real-time geolocation and historical data to alert users about pollution levels in rivers, lakes, canals, and groundwater sources.
+BeAware is an AI-powered environmental awareness system designed to monitor, analyse, and predict water quality across the UK. It leverages real-time geolocation and historical data to alert users about pollution levels in rivers, lakes, canals, and groundwater sources.
 
 ---
 
@@ -9,7 +9,7 @@ BeAware is an AI-powered environmental awareness system designed to monitor, ana
 The goal is to build an intelligent system that:
 - Detects outliers in water quality parameters
 - Predicts real-time and next-day values for key pollutants
-- Matches predictions to the user's location and nearest water type
+- Matches predictions to the user's location and nearest 3 water types
 - Displays this information in a user-friendly dashboard
 
 ---
@@ -17,7 +17,7 @@ The goal is to build an intelligent system that:
 ## 📊 Features & Visuals
 
 - 🌍 Location-based analysis: match user’s coordinates to the nearest water type
-- 📉 Time-based visualizations: show pollution trends by hour, day, month, and season
+- 📉 Time-based visualizations: show pollution trends by hour, day, month, and season across locations and water types
 - 🧭 Outlier Mapping: identify regions with frequent spikes
 - 🔮 Real-Time + t+1 Predictions: view predicted values for water quality indicators
 - 🧼 Data Insights: explore rolling averages, seasonal patterns, and clusters
@@ -138,12 +138,35 @@ Performance is reported per **water type** and **parameter** using RMSE and R² 
 ❌ _Note: Phosphorus-P (Groundwater, t) resulted in undefined/invalid R² due to zero variance in actuals._
 
 ---
+## 💬 Future Plans
 
-- **Use Cases:**
-  - Real-time prediction
-  - Forecasting missing or future measurements
-  - Alerting users based on predicted pollution risk
+- 🌐 **Integrate into BeAware App Frontend**  
+  The trained models will be deployed into the BeAware React Native application, allowing users to view water quality predictions directly from their mobile devices.
+  its an ongoign project, more details on the front end will be available on my linkedinm page soon.
+  
+  here is a sneek peek on whats coming.
+<img width="452" alt="Screenshot 2025-04-07 at 00 09 36" src="https://github.com/user-attachments/assets/d0e7a333-6dc6-4305-bf26-7cad24b06ff0" />
+<img width="452" alt="Screenshot 2025-04-07 at 00 09 49" src="https://github.com/user-attachments/assets/f76fe273-9aeb-4f89-81b8-2337cf6ca5eb" />
+<img width="452" alt="Screenshot 2025-04-07 at 00 09 59" src="https://github.com/user-attachments/assets/979331e8-6d36-4e72-b27a-58ba887049b3" />
+<img width="452" alt="Screenshot 2025-04-07 at 00 14 28" src="https://github.com/user-attachments/assets/9b031fc6-fe0c-49d9-8a3a-c8005ddf044c" />
+
+- 📍 **Predict Water Quality by User Location**  
+  The system will automatically determine a user’s closest water sampling site and water type, and serve them current and next-day predictions in real time.
+
+- 📊 **Add Interactive Maps + Environmental Alerts**  
+  Users will be able to explore environmental health indicators via interactive map layers, view outlier alerts, and track changes over time.
+
+- 🧠 **Expand Scope to Other Environmental Factors**  
+  Planned modules will extend this project to include:
+  - Air Quality (via API)
+  - Soil Fertility (sensor or vision-based)
+  - Light Pollution (satellite mapping)
+  - Noise Pollution (acoustic signal analysis)
 
 ---
 
-## 🗂️ Project Structure
+## 🙌 Acknowledgements
+
+This project is a solo data science and machine learning initiative by **Sofiane Belbrik**, developed as part of a broader environmental AI awareness platform called **BeAware**.
+
+The mission is to empower users with actionable insights on environmental quality, encourage sustainable behavior, and support data-driven environmental planning through transparent and accessible tools.
