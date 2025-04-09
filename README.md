@@ -1,39 +1,38 @@
-# 💧 BeAware: Water Quality Prediction & Outlier Detection System
+# 💧 Water Quality Prediction (2020–2025)
 
-BeAware is an AI-powered environmental awareness system designed to monitor, analyse, and predict water quality across the UK. It leverages real-time geolocation and historical data to alert users about pollution levels in rivers, lakes, canals, and groundwater sources.
+This project aims to analyze, model, and forecast water pollution levels across England between 2020 and 2025. It uses historical environmental monitoring data, advanced data preprocessing, feature engineering, and machine learning to predict the values of 10 key water quality parameters.
 
 ---
 
 ## 🎯 Project Goal
 
-The goal is to build an intelligent system that:
-- Detects outliers in water quality parameters
-- Predicts real-time and next-day values for key pollutants
-- Matches predictions to the user's location and nearest 3 water types
-- Displays this information in a user-friendly dashboard
+To build a reliable predictive system that:
+- 📍 Identifies the nearest water type from a user's location
+- 🔮 Predicts the current and next-day pollution levels for 10 water parameters
+- 🌍 Powers the backend of the upcoming **BeAware** environmental awareness app
+- 📊 Enables real-time environmental forecasting based on user coordinates
 
 ---
 
-## 📊 Features & Visuals
+## 🔍 Data Overview
 
-- 🌍 Location-based analysis: match user’s coordinates to the nearest water type
-- 📉 Time-based visualizations: show pollution trends by hour, day, month, and season across locations and water types
-- 🧭 Outlier Mapping: identify regions with frequent spikes
-- 🔮 Real-Time + t+1 Predictions: view predicted values for water quality indicators
-- 🧼 Data Insights: explore rolling averages, seasonal patterns, and clusters
-- 📌 Streamlit Dashboard: interactive outlier visualization panel
-
----
-
-## 🧪 Tech Stack
-
-- **Languages**: Python, HTML/CSS/JS (for frontend app), SQL
-- **Libraries**: pandas, NumPy, scikit-learn, LightGBM, matplotlib, seaborn
-- **Visualization**: Streamlit, GeoPandas, folium
-- **Model Management**: joblib for saving and loading models
-- **Platform**: Jupyter Notebooks (for experiments), Streamlit (for UI)
+- **Source**: UK Government environmental datasets (2020–2025)
+- **Samples**: 243,000+ water samples
+- **Columns**: Timestamp, water type, location coordinates, pollution parameters
+- **Key Parameters**:
+  1. O Diss %sat
+  2. Orthophosphates
+  3. Ammonia (N)
+  4. Water Temperature
+  5. pH
+  6. Nitrite-N
+  7. Nitrate-N
+  8. Turbidity (NTU)
+  9. Biochemical Oxygen Demand (BOD ATU)
+  10. Phosphorus (P)
 
 ---
+
 
 ## 🧼 Data Preprocessing & Feature Engineering
 
@@ -68,6 +67,23 @@ The goal is to build an intelligent system that:
 - **Outlier Frequency Scores:** how often a site showed spikes
 
 ---
+## 📊 Features & Visuals
+
+- 📌 **Dashboard** showing outliers on the map.
+- 📈 **Time-series visualizations** for trends per parameter and water type.
+- 🧭 **Clustering maps** to display water zones by pollution behavior.
+- 📆 **Seasonal decomposition** and trends across years.
+
+You can view them all in the `Data_Analysis_.html` and `Data_Preprocessing&ModelTraining.html` reports included in this repo.
+
+---
+
+## 🧪 Tech Stack
+
+- **Language**: Python (Pandas, NumPy, Scikit-learn, LightGBM)
+- **Visualization**: Matplotlib, Plotly
+- **Modeling**: LightGBM (for its speed + tabular performance)
+- **Platform**: JupyterLab / Streamlit (for future UI integration)
 
 ## 🧠 Machine Learning Models
 
