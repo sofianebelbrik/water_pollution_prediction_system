@@ -53,6 +53,14 @@ To build a reliable predictive system that:
 4. **Outlier Detection:**
    - Used IQR per parameter & water type
    - Added binary outlier flags for each key parameter
+   
+  Below are example snapshots from the project to give a visual overview of the dashboard functionality, visual analytics, and outlier mapping:
+	•	🌍 Outlier Mapping Interface
+Displays pollution parameter outliers geographically across England. Users can select a pollutant (e.g., Ammonia, Turbidity) to highlight where extreme readings have occurred.
+<img width="1405" alt="Screenshot 2025-04-09 at 13 12 01" src="https://github.com/user-attachments/assets/37783a29-40b3-4e9a-b997-589f071a4ad3" />
+<img width="1405" alt="Screenshot 2025-04-09 at 13 12 13" src="https://github.com/user-attachments/assets/cf9115c9-691b-494d-a2a6-9ca00ef5825e" />
+<img width="1405" alt="Screenshot 2025-04-09 at 13 12 17" src="https://github.com/user-attachments/assets/ee025f92-0cd9-47f5-8c74-2f0aced95d5f" />
+
 
 5. **Geographic Clustering:**
    - K-Means clustering on coordinates to identify water quality zones
